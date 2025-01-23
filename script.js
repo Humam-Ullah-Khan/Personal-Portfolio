@@ -45,8 +45,8 @@ a.forEach(item => {
 })
 
 
-// scrolling
 document.addEventListener("DOMContentLoaded", () => {
+  // scrolling
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -59,4 +59,60 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+
+
+// services logic
+let service1 = document.getElementById('service1');
+let service2 = document.getElementById('service2');
+let service3 = document.getElementById('service3');
+let service4 = document.getElementById('service4');
+
+let toggler1 = service1.querySelector('.toggler');
+let toggler2 = service2.querySelector('.toggler');
+let toggler3 = service3.querySelector('.toggler');
+let toggler4 = service4.querySelector('.toggler');
+
+
+service1.style.transition = 'all 1s';
+service2.style.transition = 'all 1s';
+service3.style.transition = 'all 1s';
+service4.style.transition = 'all 1s';
+
+var flagChange = false;
+
+function changingSize(short, long) {
+    if (short.classList.contains('col-md-4')) {
+        // Change short to col-md-8 and long to col-md-4
+        short.classList.remove('col-md-4');
+        short.classList.add('col-md-8');
+        long.classList.remove('col-md-8');
+        long.classList.add('col-md-4');
+        flagChange = true;
+    } else {
+        // Change short back to col-md-4 and long back to col-md-8
+        short.classList.remove('col-md-8');
+        short.classList.add('col-md-4');
+        long.classList.remove('col-md-4');
+        long.classList.add('col-md-8');
+        flagChange = false;
+    }
+}
+
+
+toggler1.addEventListener('click',function(){
+  changingSize(service2,service1)
+})
+toggler2.addEventListener('click',function(){
+  changingSize(service1,service2)
+})
+toggler3.addEventListener('click',function(){
+  changingSize(service3,service4)
+})
+toggler4.addEventListener('click',function(){
+  changingSize(service4,service3)
+})
+
 });
+
+
