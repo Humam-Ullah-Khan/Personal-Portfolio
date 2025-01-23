@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --headings-font: "Oswald";
+    --regular-font: "Poppins";
+    --dark-Color: #000;
+    --bg-color: #F4F3ED;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    position: relative;
+    cursor: none;
+}
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid #808080;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 9999 !important;
+}
+
+
+.cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #808080;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+    z-index: 9999 !important;
+}
+
+.navbar a {
+    cursor: none !important;
+    /* Disable the default cursor */
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--headings-font);
+}
+
+p {
+    font-family: var(--regular-font);
+}
+
+.fixed-top {
+    background-color: var(--bg-color);
+}
+
+.navbar-brand h2 {
+    font-weight: 700;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+    font-family: var(--regular-font);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--dark-Color);
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: var(--dark-Color);
+    border-radius: 0 !important;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #F4F3ED !important;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: var(--dark-Color) !important;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:active {
+    background-color: #FFF !important;
+    color: var(--dark-Color) !important;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.HeroSection {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.HeroSection h2 {
+    font-size: 12vw;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.FirstSection {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--dark-Color);
+}
+
+.FirstSection .left-Side {
+    width: 100%;
+    background-color: #FFF;
+    color: var(--dark-Color);
+}
+
+.FirstSection .left-Side .btn-dark {
+    padding: 20px 30px;
+    border-radius: 0px;
+    background-color: var(--dark-Color);
+    font-weight: 500;
+    font-family: var(--regular-font);
+    border: 1.4px solid #000;
+}
+
+.FirstSection .left-Side .btn-dark:hover {
+    padding: 20px 30px;
+    border-radius: 0px;
+    background-color: var(--bg-color);
+    color: #000;
+}
+
+
+.FirstSection .left-Side2 {
+    width: 100% !important;
+}
+
+.FirstSection nav,
+.pagination {
+    width: fit-content !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FirstSection .pagination .page-item .page-link {
+    border-radius: 0 !important;
+    background-color: var(--bg-color);
+    color: #000;
+    font-family: var(--headings-font);
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    width: fit-content !important;
+}
+
+.FirstSection .pagination .page-item .page-link:hover {
+    outline: 2px solid #808080;
+}
+
+
+.FirstSection .right-side {
+    width: 100%;
+    height: fit-content;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.FirstSection .right-side input {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border: none;
+    font-family: var(--regular-font);
+    background-color: var(--bg-color);
+}
+
+.FirstSection .right-side .searchSec i {
+    font-size: 25px;
+    color: #242222;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+
+.FirstSection .right-side .ClientCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--bg-color);
+    height: fit-content;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.FirstSection .right-side .ClientCard .Clientimg img{
+    transition: all 0.5s;
+}
+
+.FirstSection .right-side .ClientCard .Clientimg:hover img{
+    scale: 1.03;
+}
+
+.FirstSection .right-side .ClientCard .social-links i {
+    padding: 15px;
+    gap: 10px;
+    background-color: transparent;
+    border: 1.5px solid #000;
+    transition: all 0.3s;
+}
+
+
+.FirstSection .right-side .ClientCard .social-links i:hover {
+    color: #FFF;
+    background-color: var(--dark-Color);
+}
+
+
+.FirstSection .right-second .d-flex img {
+    transition: all 0.3s;
+}
+
+.FirstSection .right-second .d-flex:hover img {
+    scale: 1.03;
+}
+
+
+.FirstSection .thirdRight ul li a {
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--black-color);
+    position: relative;
+    background: var(--bg-color);
+    box-shadow: 0 1px 3px rgba(3, 4, 28, .06);
+    display: block;
+    padding: 10px 14px 10px 33px;
+    margin: 10px 0px;
+    font-family: var(--regular-font);
+    text-decoration: none;
+}
+
+
+.FirstSection .thirdRight ul li a::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    background-color: var(--dark-Color);
+    border-radius: 50%;
+}
+
+
+.FirstSection .thirdRight ul li a span {
+    float: right;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--black-color);
+    display: inline-block;
+    line-height: 1;
+    padding: 4px 11px 5px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    margin-top: 2px;
+}
+
+.FirstSection .FourthRight p {
+    padding: 10px 20px;
+    background-color: var(--bg-color);
+    color: var(--dark-Color);
+}
+
+
+.lastSection p {
+    font-size: 23px;
+    color: #000;
+    text-align: center;
+}
+
+.lastSection h2 {
+    font-size: 13vw;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    .HeroSection {
+        height: 30vh;
+        margin-bottom: 70px;
+        align-items: end;
+    }
+
+    .HeroSection h2 {
+        font-size: 20vw;
+        font-weight: 800;
+    }
+
+
+}

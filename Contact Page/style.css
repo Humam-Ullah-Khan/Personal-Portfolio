@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --headings-font: "Oswald";
+    --regular-font: "Poppins";
+    --dark-Color: #000;
+    --bg-color: #F4F3ED;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    position: relative;
+    cursor: none;
+}
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid #808080;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 9999 !important;
+}
+
+
+.cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #808080;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+    z-index: 9999 !important;
+}
+
+.navbar a {
+    cursor: none !important;
+    /* Disable the default cursor */
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--headings-font);
+}
+
+p {
+    font-family: var(--regular-font);
+}
+
+.fixed-top {
+    background-color: var(--bg-color);
+}
+
+.navbar-brand h2 {
+    font-weight: 700;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+    font-family: var(--regular-font);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--dark-Color);
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: var(--dark-Color);
+    border-radius: 0 !important;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #F4F3ED !important;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: var(--dark-Color) !important;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:active {
+    background-color: #FFF !important;
+    color: var(--dark-Color) !important;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.HeroSection {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.HeroSection h1 {
+    font-size: 13vw;
+    text-transform: uppercase;
+    color: #000;
+}
+
+
+.ContactContainer {
+    width: 100%;
+    height: fit-content;
+}
+
+.ContactContainer h1 {
+    font-size: 15vh;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.ContactContainer .leftSide {
+    width: 100%;
+    height: fit-content;
+    background-color: #FFFFFF;
+    padding: 50px 40px;
+    border-radius: 13px;
+}
+
+.ContactContainer .leftSide .text-body {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 30px 0px;
+}
+
+.ContactContainer .leftSide .text-body p {
+    font-size: 18px;
+    text-transform: none;
+    font-family: var(--regular-font);
+    color: #808080;
+}
+
+.ContactContainer .leftSide .Socials-body {
+    text-transform: uppercase;
+}
+
+.ContactContainer .leftSide .Socials-body i {
+    font-size: 23px;
+    padding: 10px;
+    border: 0.1px solid #e2e2e2;
+}
+
+.ContactContainer .rightSide {
+    width: 100%;
+    height: fit-content;
+    background-color: #FFFFFF;
+    padding: 50px 40px;
+    border-radius: 13px;
+    text-transform: uppercase;
+}
+
+.ContactContainer .rightSide .text-body {
+    width: 50%;
+}
+
+.ContactContainer .rightSide label {
+    font-family: var(--regular-font);
+}
+
+.ContactContainer .rightSide input {
+    font-family: var(--regular-font);
+    width: 100%;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    margin-top: 15px;
+    padding: 0px 20px;
+}
+
+.ContactContainer .rightSide textarea {
+    font-family: var(--regular-font);
+    border-radius: 8px;
+    border: 1px solid #000;
+    margin-top: 15px !important;
+    padding: 10px 20px;
+}
+
+.ContactContainer .rightSide .text-body i {
+    position: absolute;
+    right: 15px;
+    bottom: 16px;
+    font-size: 22px;
+}
+
+.ContactContainer .rightSide input:focus,
+.ContactContainer .rightSide textarea:focus {
+    outline: none !important;
+}
+
+
+.ContactContainer .rightSide .btn-dark {
+    padding: 19px 30px;
+    background-color: var(--dark-Color);
+    font-family: var(--regular-font);
+    font-weight: 500;
+    border-radius: 0%;
+    text-transform: none;
+    transition: all 0.4s;
+}
+
+.ContactContainer .rightSide .btn-dark:hover {
+    background-color: transparent;
+    border: 0.8px solid #000;
+    color: #000;
+}
+
+
+
+
+.lastSection p {
+    font-size: 23px;
+    color: #000;
+    text-align: center;
+}
+
+.lastSection h2 {
+    font-size: 13vw;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    .HeroSection {
+        height: 30vh;
+        margin-bottom: 70px;
+        align-items: end;
+    }
+
+    .HeroSection h1 {
+        font-size: 20vw;
+        font-weight: 800;
+    }
+
+    .ContactContainer h1 {
+        font-size: 8vh;
+    }
+
+    .ContactContainer .rightSide .text-body {
+        width: 100%;
+    }
+
+
+}

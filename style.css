@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --headings-font: "Oswald";
+    --regular-font: "Poppins";
+    --dark-Color: #000;
+    --bg-color: #F4F3ED;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    position: relative;
+    cursor: none;
+}
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid #808080;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 9999 !important;
+}
+
+
+.cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #808080;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+    z-index: 9999 !important;
+}
+
+
+.navbar a {
+    cursor: none !important;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--headings-font);
+}
+
+p {
+    font-family: var(--regular-font);
+}
+
+.fixed-top {
+    background-color: var(--bg-color);
+}
+
+.navbar-brand h2 {
+    font-weight: 700;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+    font-family: var(--regular-font);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--dark-Color);
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: var(--dark-Color);
+    border-radius: 0 !important;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #F4F3ED !important;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: var(--dark-Color) !important;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:active {
+    background-color: #FFF !important;
+    color: var(--dark-Color) !important;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.HeroSection {
+    width: 100%;
+    height: 670px;
+    margin-top: 80px;
+}
+
+.OwnerName {
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    z-index: 1;
+}
+
+.OwnerName h1 {
+    font-size: 12vw;
+    color: var(--dark-Color);
+    position: relative;
+    top: 50px;
+}
+
+
+.Profile_container {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.OwnerProfile {
+    width: 100%;
+    height: 450px;
+    background-color: #E5DED8;
+    background-image: url('./images/profile-bgremove.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: 3px solid #fff;
+    border-radius: 14px;
+    rotate: 10deg;
+    transition: all 0.5s !important;
+    z-index: 9 !important;
+    position: relative;
+    top: 20px;
+}
+
+.OwnerProfile:hover {
+    rotate: 0deg;
+}
+
+.ReviewClients {
+    top: -400px;
+    position: relative;
+    z-index: -1 !important;
+}
+
+.FirstSec {
+    background-color: var(--dark-Color);
+    color: #F4F3ED;
+}
+
+.FirstSec h4 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+/* Animations  */
+.custom-marquee .marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.custom-marquee .marquee {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.custom-marquee .marquee-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation: marquee 30s linear infinite;
+    animation: marquee 30s linear infinite;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .custom-marquee .marquee-content {
+        -webkit-animation: marquee 20s linear infinite;
+        animation: marquee 20s linear infinite;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .custom-marquee .marquee-content {
+        -webkit-animation: marquee 10s linear infinite;
+        animation: marquee 10s linear infinite;
+    }
+}
+
+.custom-marquee .primary-bg {
+    padding: 10px 0;
+    background-color: transparent;
+}
+
+.custom-marquee .primary-bg span {
+    color: #E5DED8;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.custom-marquee .black-bg {
+    padding: 10px 0;
+    /* background-color: #fff; */
+}
+
+.custom-marquee .black-bg span {
+    color: #E5DED8;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.custom-marquee .marquee-row-1 {
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+}
+
+.custom-marquee .marquee-row-2 {
+    animation-direction: reverse;
+}
+
+.custom-marquee .marquee-content span {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+@-webkit-keyframes marquee {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+
+.ReviewClients p {
+    font-family: var(--regular-font);
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.ReviewClients .btn-dark {
+    padding: 20px 40px;
+    background-color: var(--dark-Color);
+    font-family: var(--regular-font);
+    font-weight: 500;
+    border-radius: 0%;
+    transition: all 0.6s;
+}
+
+.ReviewClients .btn-dark:hover {
+    background-color: transparent;
+    border: 0.8px solid #000;
+    color: #000;
+}
+
+
+.ServicesSec h1 {
+    font-size: 15vh;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.servicesBox {
+    width: 100%;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: relative;
+}
+
+.servicesBox:hover .servicesCount {
+    background-color: #000;
+    color: #fff;
+}
+
+.servicesCount {
+    border: 1.5px solid #000;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: all 0.5s;
+    font-family: var(--regular-font);
+}
+
+.servicesBox i {
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    transition: all 0.4s;
+}
+
+.servicesBox:hover i {
+    rotate: 45deg;
+}
+
+
+.RecentWork {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--dark-Color);
+    color: #F4F3ED;
+}
+
+
+.Recent_HeroSec {
+    height: 400px;
+    transition: all 0.4s;
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+
+}
+
+.Recent_HeroSec:hover::before,
+.Recent_HeroSec_bottom:hover::before {
+    display: block;
+}
+
+.Recent_HeroSec:hover img,
+.Recent_HeroSec_bottom:hover img {
+    transform: scale(1.01);
+}
+
+.Recent_HeroSec::before,
+.Recent_HeroSec_bottom::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 5 !important;
+    backdrop-filter: blur(2.5px);
+    border-radius: inherit !important;
+    display: none;
+    transition: all 0.4s;
+}
+
+
+.Recent_HeroSec img,
+.Recent_HeroSec_bottom img {
+    width: 100%;
+    height: 100%;
+    background-color: #F4F3ED;
+    transition: all 0.4s;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+.Recent_HeroSec p,
+.Recent_HeroSec_bottom p {
+    position: absolute;
+    top: 15px;
+    background: #888888;
+    padding: 10px;
+    border-radius: 25px;
+    right: 10px;
+    font-weight: 500;
+    z-index: 6;
+}
+
+.Recent_HeroSec h3,
+.Recent_HeroSec_bottom h3 {
+    position: absolute;
+    bottom: -40px;
+    left: 13px;
+    transition: all 0.7s;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 6;
+}
+
+.Recent_HeroSec:hover h3,
+.Recent_HeroSec_bottom:hover h3 {
+    bottom: 0px;
+    color: #FFFFFF;
+    background-color: #000;
+}
+
+
+
+.Recent_HeroSec_bottom {
+    height: 300px;
+    transition: all 0.4s;
+    overflow: hidden;
+    position: relative;
+    border-radius: 12px;
+}
+
+.testimonial_card {
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+    background-color: #f8f6f6;
+}
+
+.testimonial_card h3 {
+    text-transform: uppercase;
+}
+
+.testimonial_card:hover {
+    border: 1px solid #000;
+}
+
+.Testinomials_Section h1 {
+    font-size: 12vh;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.Testinomials_Section img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+
+/* Stories Section  */
+
+.Stories_Section {
+    width: 100%;
+    height: fit-content;
+    background-color: #000;
+    color: #FFFFFF;
+    position: relative;
+    padding: 20px 0px;
+}
+
+.Stories_Section h1 {
+    font-size: 15vh;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.StoriesCard {
+    width: 100%;
+    height: 100%;
+    border: 0.8px solid #5b5b5b;
+    padding: 40px 20px;
+}
+
+.Stories_Section .CardChild img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s;
+    border-radius: 10px;
+}
+
+.Stories_Section .CardChild:hover img {
+    filter: blur(2px);
+    transform: scale(1.02);
+}
+
+.Stories_Section .CardChild p {
+    padding: 10px;
+    background-color: #303030c1;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 13px;
+    border-radius: 20px;
+}
+
+.StoriesCard .Cardtext {
+    text-transform: uppercase;
+}
+
+.Cardtext p {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.StoriesCard .Cardtext h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.Cardtext .btn-light {
+    width: 160px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    text-transform: none;
+    font-weight: 500;
+    font-family: var(--regular-font);
+    margin-top: 15px;
+    transition: all 0.4s;
+    letter-spacing: 2px;
+}
+
+.Cardtext .btn-light:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+    padding-right: 5px;
+}
+
+
+.ContactContainer {
+    width: 100%;
+    height: fit-content;
+}
+
+.ContactContainer h1 {
+    font-size: 15vh;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.ContactContainer .leftSide {
+    width: 100%;
+    height: fit-content;
+    background-color: #FFFFFF;
+    padding: 50px 40px;
+    border-radius: 13px;
+}
+
+.ContactContainer .leftSide .text-body {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 30px 0px;
+}
+
+.ContactContainer .leftSide .text-body p {
+    font-size: 18px;
+    text-transform: none;
+    font-family: var(--regular-font);
+    color: #808080;
+}
+
+.ContactContainer .leftSide .Socials-body {
+    text-transform: uppercase;
+}
+
+.ContactContainer .leftSide .Socials-body i {
+    font-size: 23px;
+    padding: 10px;
+    border: 0.1px solid #e2e2e2;
+}
+
+.ContactContainer .rightSide {
+    width: 100%;
+    height: fit-content;
+    background-color: #FFFFFF;
+    padding: 50px 40px;
+    border-radius: 13px;
+    text-transform: uppercase;
+}
+
+.ContactContainer .rightSide .text-body {
+    width: 50%;
+}
+
+.ContactContainer .rightSide label {
+    font-family: var(--regular-font);
+}
+
+.ContactContainer .rightSide input {
+    font-family: var(--regular-font);
+    width: 100%;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    margin-top: 15px;
+    padding: 0px 20px;
+}
+
+.ContactContainer .rightSide textarea {
+    font-family: var(--regular-font);
+    border-radius: 8px;
+    border: 1px solid #000;
+    margin-top: 15px !important;
+    padding: 10px 20px;
+}
+
+.ContactContainer .rightSide .text-body i {
+    position: absolute;
+    right: 15px;
+    bottom: 16px;
+    font-size: 22px;
+}
+
+.ContactContainer .rightSide input:focus,
+.ContactContainer .rightSide textarea:focus {
+    outline: none !important;
+}
+
+
+.ContactContainer .rightSide .btn-dark {
+    padding: 19px 30px;
+    background-color: var(--dark-Color);
+    font-family: var(--regular-font);
+    font-weight: 500;
+    border-radius: 0%;
+    text-transform: none;
+    transition: all 0.4s;
+}
+
+.ContactContainer .rightSide .btn-dark:hover {
+    background-color: transparent;
+    border: 0.8px solid #000;
+    color: #000;
+}
+
+.lastSection p {
+    font-size: 23px;
+    color: #000;
+    text-align: center;
+}
+
+.lastSection h2 {
+    font-size: 13vw;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* small Screens  */
+@media only screen and (max-width: 600px) {
+    .HeroSection {
+        height: fit-content;
+    }
+
+    .OwnerName h1 {
+        text-align: center;
+        font-size: 20vw;
+        margin-top: 10px;
+        font-weight: 700;
+    }
+
+    .ReviewClients {
+        top: 50px;
+    }
+
+    .OwnerProfile {
+        width: 350px;
+        top: 40px;
+    }
+
+    .ServicesSec h1 {
+        font-size: 12vh;
+    }
+
+    .Testinomials_Section h1,
+    .ContactContainer h1 {
+        font-size: 8vh;
+    }
+
+    .Stories_Section h1 {
+        font-size: 14vh;
+    }
+
+    .ContactContainer .rightSide .text-body {
+        width: 100%;
+    }
+
+}

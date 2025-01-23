@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --headings-font: "Oswald";
+    --regular-font: "Poppins";
+    --dark-Color: #000;
+    --bg-color: #F4F3ED;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    position: relative;
+    cursor: none;
+}
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid #808080;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 9999 !important;
+}
+
+
+.cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #808080;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+    z-index: 9999 !important;
+}
+
+.navbar a {
+    cursor: none !important;
+    /* Disable the default cursor */
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--headings-font);
+}
+
+p {
+    font-family: var(--regular-font);
+}
+
+.fixed-top {
+    background-color: var(--bg-color);
+}
+
+.navbar-brand h2 {
+    font-weight: 700;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+    font-family: var(--regular-font);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--dark-Color);
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: var(--dark-Color);
+    border-radius: 0 !important;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #F4F3ED !important;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: var(--dark-Color) !important;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:active {
+    background-color: #FFF !important;
+    color: var(--dark-Color) !important;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.HeroSection {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.HeroSection h1 {
+    font-size: 11vw;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 50px;
+}
+
+
+.firstSection {
+    width: 100%;
+    height: fit-content;
+    background-color: #000;
+    overflow: hidden;
+    color: #FFFFFF;
+}
+
+.laptopimg {
+    width: 100%;
+    height: 1200px;
+    background-image: url('https://nino-next-js.vercel.app/assets/images/projects/work2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px 0px;
+}
+
+.firstSection .right-side p {
+    font-weight: 400;
+    font-size: 19px;
+    color: rgb(235, 242, 242);
+}
+
+
+
+.Recent_HeroSec {
+    height: 400px;
+    transition: all 0.4s;
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+
+}
+
+.Recent_HeroSec:hover::before {
+    display: block;
+}
+
+.Recent_HeroSec:hover img {
+    transform: scale(1.01);
+}
+
+.Recent_HeroSec::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 5 !important;
+    backdrop-filter: blur(2.5px);
+    border-radius: inherit !important;
+    display: none;
+    transition: all 0.4s;
+}
+
+
+.Recent_HeroSec img {
+    width: 100%;
+    height: 100%;
+    background-color: #F4F3ED;
+    transition: all 0.4s;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+.lastSection p {
+    font-size: 23px;
+    color: #000;
+    text-align: center;
+}
+
+.lastSection h2 {
+    font-size: 13vw;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    .HeroSection {
+        height: 30vh;
+        margin-bottom: 70px;
+        margin-top: 300px !important;
+        align-items: end;
+    }
+
+    .HeroSection h1 {
+        font-size: 15vw;
+        font-weight: 800;
+    }
+
+    .firstSection {
+        height: fit-content;
+    }
+
+    .laptopimg {
+        height: 350px;
+    }
+
+}
