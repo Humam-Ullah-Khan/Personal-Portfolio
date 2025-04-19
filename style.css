@@ -670,6 +670,7 @@ p {
     .OwnerProfile {
         width: 350px;
         top: 40px;
+        rotate: 0deg;
     }
 
     .ServicesSec h1 {
