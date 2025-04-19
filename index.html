@@ -1,325 +1,397 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Personal Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
     <!-- Remix Icon   -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
-        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="cursor"></div>
     <div class="cursor2"></div>
 
-
     <div class="container-fluid p-0 overflow-hidden">
-
-        <!-- Hero Section  -->
-        <div class="container-fluid HeroSection">
-            <nav class="navbar navbar-expand-lg fixed-top">
-                <div class="container mt-3">
-                    <a class="navbar-brand" href="./index.html">
-                        <h2>Humam</h2>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./About Page/index.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./Services Page/index.html">services</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Projects<i class="ri-arrow-down-s-line"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./Project List/index.html">Projects List</a></li>
-                                    <li><a class="dropdown-item" href="./Singal Porfolio Page/index.html">Single
-                                            Portfolio</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./Blog Page/index.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./Contact Page/index.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-            <div class="container OwnerName">
-                <div class="row">
-                    <div class="col d-flex flex-md-row flex-column">
-                        <h1 data-aos="fade-right">HUMAM-</h1>
-                        <h1 data-aos="fade-left">ULLAH</h1>
-                    </div>
-                </div>
+      <!-- Hero Section  -->
+      <div class="container-fluid HeroSection">
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container mt-3">
+            <a class="navbar-brand" href="./index.html">
+              <h2>Humam</h2>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./About Page/index.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Services Page/index.html"
+                    >services</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Projects<i class="ri-arrow-down-s-line"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./Project List/index.html"
+                        >Projects List</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./Singal Porfolio Page/index.html"
+                        >Single Portfolio</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Blog Page/index.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Contact Page/index.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
             </div>
+          </div>
+        </nav>
 
-            <div class="container">
-                <div class="row Profile_container">
-                    <div class="col-md-4 d-none">
-
-                    </div>
-                    <div class="col-md-4" data-aos="fade-up">
-                        <div class="OwnerProfile" data-aos="zoom-in">
-
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-none">
-
-                    </div>
-                </div>
+        <div class="container OwnerName">
+          <div class="row">
+            <div class="col d-flex flex-md-row flex-column">
+              <h1 data-aos="fade-right">HUMAM-</h1>
+              <h1 data-aos="fade-left">ULLAH</h1>
             </div>
-
-            <div class="container-fluid ReviewClients">
-                <div class="row py-5" data-aos="fade-up">
-                    <div class="col-md-3 p-md-4">
-                        <div class="d-flex">
-                            <img class="rounded-circle" src="./images/ReviewClient_01.jpg" alt="ReviewClient_01"
-                                width="50px">
-                            <img class="rounded-circle" src="./images/ReviewClient_02.jpg" alt="ReviewClient_02"
-                                width="50px">
-                            <img class="rounded-circle" src="./images/ReviewClient_03.jpg" alt="ReviewClient_03"
-                                width="50px">
-                        </div>
-                        <div class="w-100 p-0">
-                            <p>100+ reviews <span class="text-secondary">(4.96 of 5)</span></p>
-                        </div>
-                        <div>
-                            <p>Five-star reviews from my esteemed clients.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-
-                    </div>
-                    <div class="col-md-3 p-md-2">
-                        <div class="text">
-                            <p>Hi, I’m Humam, a passionate Front-End Web Developer dedicated to crafting responsive and
-                                user-friendly websites.</p>
-
-                            <a class="btn btn-dark mb-5" href="#">Get In Touch</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
 
-        <!-- first Section  -->
-        <div class="container-fluid FirstSec">
-            <div class="py-md-5">
-                <div class="row">
-
-                    <div class="col-12 py-5 text-center">
-                        <h4>Company I Worked With</h4>
-                    </div>
-
-                    <!-- marquee area starts -->
-                    <div class="custom-marquee">
-                        <div class="marquee-container">
-                            <div class="marquee">
-                                <div class="primary-bg">
-                                    <div class="marquee-content marquee-row-1">
-                                        <span><i class="ri-gemini-fill"></i> Web Design <span></span><i
-                                                class="ri-gemini-fill"></i> Responsive Design <span></span><i
-                                                class="ri-gemini-fill"></i> UI Development <span></span><i
-                                                class="ri-gemini-fill"></i> Front-End Development <span></span><i
-                                                class="ri-gemini-fill"></i> UI/UX Development <span></span><i
-                                                class="ri-gemini-fill"></i> Graphic Design <span></span><i
-                                                class="ri-gemini-fill"></i> Web Animation <span></span><i
-                                                class="ri-gemini-fill"></i> Digital Solutions <span></span><i
-                                                class="ri-gemini-fill"></i> Web Optimization</span>
-
-                                        <span><i class="ri-gemini-fill"></i> Web Design <span></span><i
-                                                class="ri-gemini-fill"></i> Responsive Design <span></span><i
-                                                class="ri-gemini-fill"></i> UI Development <span></span><i
-                                                class="ri-gemini-fill"></i> Front-End Development <span></span><i
-                                                class="ri-gemini-fill"></i> UI/UX Development <span></span><i
-                                                class="ri-gemini-fill"></i> Graphic Design <span></span><i
-                                                class="ri-gemini-fill"></i> Web Animation <span></span><i
-                                                class="ri-gemini-fill"></i> Digital Solutions <span></span><i
-                                                class="ri-gemini-fill"></i> Web Optimization</span>
-
-                                        <span><i class="ri-gemini-fill"></i> Web Design <span></span><i
-                                                class="ri-gemini-fill"></i> Responsive Design <span></span><i
-                                                class="ri-gemini-fill"></i> UI Development <span></span><i
-                                                class="ri-gemini-fill"></i> Front-End Development <span></span><i
-                                                class="ri-gemini-fill"></i> UI/UX Development <span></span><i
-                                                class="ri-gemini-fill"></i> Graphic Design <span></span><i
-                                                class="ri-gemini-fill"></i> Web Animation <span></span><i
-                                                class="ri-gemini-fill"></i> Digital Solutions <span></span><i
-                                                class="ri-gemini-fill"></i> Web Optimization</span>
-                                    </div>
-                                </div>
-                                <div class="black-bg">
-                                    <div class="marquee-content marquee-row-2">
-                                        <span><i class="ri-gemini-fill"></i> Web Design <span></span><i
-                                                class="ri-gemini-fill"></i> Responsive Design <span></span><i
-                                                class="ri-gemini-fill"></i> UI Development <span></span><i
-                                                class="ri-gemini-fill"></i> Front-End Development <span></span><i
-                                                class="ri-gemini-fill"></i> UI/UX Development <span></span><i
-                                                class="ri-gemini-fill"></i> Graphic Design <span></span><i
-                                                class="ri-gemini-fill"></i> Web Animation <span></span><i
-                                                class="ri-gemini-fill"></i> Digital Solutions <span></span><i
-                                                class="ri-gemini-fill"></i> Web Optimization</span>
-                                        <span><i class="ri-gemini-fill"></i> Web Design <span></span><i
-                                                class="ri-gemini-fill"></i> Responsive Design <span></span><i
-                                                class="ri-gemini-fill"></i> UI Development <span></span><i
-                                                class="ri-gemini-fill"></i> Front-End Development <span></span><i
-                                                class="ri-gemini-fill"></i> UI/UX Development <span></span><i
-                                                class="ri-gemini-fill"></i> Graphic Design <span></span><i
-                                                class="ri-gemini-fill"></i> Web Animation <span></span><i
-                                                class="ri-gemini-fill"></i> Digital Solutions <span></span><i
-                                                class="ri-gemini-fill"></i> Web Optimization</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="container">
+          <div class="row Profile_container">
+            <div class="col-md-4 d-none"></div>
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="OwnerProfile" data-aos="zoom-in"></div>
             </div>
-
-            <!-- About Me  -->
-            <div class="container py-md-5">
-                <div class="row my-5">
-                    <div class="col-md-4 pt-5" data-aos="fade-up">
-                        <p class="fs-4 fw-medium">About Me</p>
-                    </div>
-                    <div class="col-md-8 pt-5">
-                        <p class="fs-3 fw-normal" data-aos="fade-up">
-                            I am Humam, a skilled Front-End Web Developer with over 2 years of experience in building
-                            responsive and visually appealing websites. My journey started with a strong foundation in
-                            HTML, CSS, JavaScript, and Bootstrap, where I discovered my passion for creating seamless
-                            and engaging user interfaces.
-                        </p>
-
-                        <div class="d-flex pt-5 gap-md-5" data-aos="fade-up">
-                            <div class="text-center">
-                                <p><b class="fs-2">2</b></p>
-                                <p class="fs-5">Years Of Experience</p>
-                            </div>
-                            <div class="text-center">
-                                <p><b class="fs-2">10+</b></p>
-                                <p class="fs-5">Completed Projects</p>
-                            </div>
-                            <div class="text-center">
-                                <p><b class="fs-2">95% +</b></p>
-                                <p class="fs-5">Client Satisfactions</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="col-md-4 d-none"></div>
+          </div>
         </div>
 
-        <div class="container py-5">
-
-            <div class="col-md-5 my-5" data-aos="fade-up">
-                <h1>Services</h1>
+        <div class="container-fluid ReviewClients">
+          <div class="row py-5" data-aos="fade-up">
+            <div class="col-md-3 p-md-4">
+              <div class="d-flex">
+                <img
+                  class="rounded-circle"
+                  src="./images/ReviewClient_01.jpg"
+                  alt="ReviewClient_01"
+                  width="50px"
+                />
+                <img
+                  class="rounded-circle"
+                  src="./images/ReviewClient_02.jpg"
+                  alt="ReviewClient_02"
+                  width="50px"
+                />
+                <img
+                  class="rounded-circle"
+                  src="./images/ReviewClient_03.jpg"
+                  alt="ReviewClient_03"
+                  width="50px"
+                />
+              </div>
+              <div class="w-100 p-0">
+                <p>
+                  100+ reviews <span class="text-secondary">(4.96 of 5)</span>
+                </p>
+              </div>
+              <div>
+                <p>Five-star reviews from my esteemed clients.</p>
+              </div>
             </div>
 
-            <div class="row ServicesSec py-md-5">
-                <div class="col-md-8" id="service1" data-aos="fade-up">
-                    <div class="servicesBox my-5">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <small class="servicesCount">01</small>
-                            <button class="border-0 bg-transparent toggler">
-                                <i class="ri-arrow-right-up-line"></i>
-                            </button>
-                        </div>
-                        <div class="mt-5 pt-5">
-                            <h3 class="text-uppercase">Responsive Web Design</h3>
-                            <p class="fs-5 text-secondary">A fusion of strategic planning and creative coding to build
-                                websites that captivate and adapt seamlessly to any device. Tools and techniques to
-                                create stunning websites efficiently.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Second -->
-                <div class="col-md-4" id="service2" data-aos="fade-up">
-                    <div class="servicesBox my-5">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <small class="servicesCount">02</small>
-                            <button class="border-0 bg-transparent toggler">
-                                <i class="ri-arrow-right-up-line"></i>
-                            </button>
-                        </div>
-                        <div class="mt-5 pt-5">
-                            <h3 class="text-uppercase">UI Development</h3>
-                            <p class="fs-5 text-secondary">Merging creativity with strategy to design visually stunning,
-                                user-friendly interfaces.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- third -->
-                <div class="col-md-4" id="service3" data-aos="fade-up">
-                    <div class="servicesBox my-5">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <small class="servicesCount">03</small>
-                            <button class="border-0 bg-transparent toggler">
-                                <i class="ri-arrow-right-up-line"></i>
-                            </button>
-                        </div>
-                        <div class="mt-5 pt-5">
-                            <h4 class="text-uppercase">Front-End Development</h4>
-                            <p class="fs-5 text-secondary">A perfect balance of functionality and design for seamless,
-                                interactive user experiences.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-3 p-md-2">
+              <div class="text">
+                <p>
+                  Hi, I’m Humam, a passionate Front-End Web Developer dedicated
+                  to crafting responsive and user-friendly websites.
+                </p>
 
-                <!-- fourth -->
-                <div class="col-md-8" id="service4" data-aos="fade-up">
-                    <div class="servicesBox my-5">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <small class="servicesCount">04</small>
-                            <button class="border-0 bg-transparent toggler">
-                                <i class="ri-arrow-right-up-line"></i>
-                            </button>
-                        </div>
-                        <div class="mt-5 pt-5">
-                            <h3 class="text-uppercase">Web Performance Optimization</h3>
-                            <p class="fs-5 text-secondary">A combination of strategic thinking and technical expertise
-                                to enhance website performance, ensuring fast loading times and smooth user experiences
-                                beyond just aesthetics.</p>
-                        </div>
-                    </div>
-                </div>
+                <a class="btn btn-dark mb-5" href="#">Get In Touch</a>
+              </div>
             </div>
-            <!-- First  -->
+          </div>
+        </div>
+      </div>
 
+      <!-- first Section  -->
+      <div class="container-fluid FirstSec">
+        <div class="py-md-5">
+          <div class="row">
+            <div class="col-12 py-5 text-center">
+              <h4>Company I Worked With</h4>
+            </div>
 
+            <!-- marquee area starts -->
+            <div class="custom-marquee">
+              <div class="marquee-container">
+                <div class="marquee">
+                  <div class="primary-bg">
+                    <div class="marquee-content marquee-row-1">
+                      <span
+                        ><i class="ri-gemini-fill"></i> Web Design <span></span
+                        ><i class="ri-gemini-fill"></i> Responsive Design
+                        <span></span><i class="ri-gemini-fill"></i> UI
+                        Development <span></span
+                        ><i class="ri-gemini-fill"></i> Front-End Development
+                        <span></span><i class="ri-gemini-fill"></i> UI/UX
+                        Development <span></span
+                        ><i class="ri-gemini-fill"></i> Graphic Design
+                        <span></span><i class="ri-gemini-fill"></i> Web
+                        Animation <span></span
+                        ><i class="ri-gemini-fill"></i> Digital Solutions
+                        <span></span><i class="ri-gemini-fill"></i> Web
+                        Optimization</span
+                      >
+
+                      <span
+                        ><i class="ri-gemini-fill"></i> Web Design <span></span
+                        ><i class="ri-gemini-fill"></i> Responsive Design
+                        <span></span><i class="ri-gemini-fill"></i> UI
+                        Development <span></span
+                        ><i class="ri-gemini-fill"></i> Front-End Development
+                        <span></span><i class="ri-gemini-fill"></i> UI/UX
+                        Development <span></span
+                        ><i class="ri-gemini-fill"></i> Graphic Design
+                        <span></span><i class="ri-gemini-fill"></i> Web
+                        Animation <span></span
+                        ><i class="ri-gemini-fill"></i> Digital Solutions
+                        <span></span><i class="ri-gemini-fill"></i> Web
+                        Optimization</span
+                      >
+
+                      <span
+                        ><i class="ri-gemini-fill"></i> Web Design <span></span
+                        ><i class="ri-gemini-fill"></i> Responsive Design
+                        <span></span><i class="ri-gemini-fill"></i> UI
+                        Development <span></span
+                        ><i class="ri-gemini-fill"></i> Front-End Development
+                        <span></span><i class="ri-gemini-fill"></i> UI/UX
+                        Development <span></span
+                        ><i class="ri-gemini-fill"></i> Graphic Design
+                        <span></span><i class="ri-gemini-fill"></i> Web
+                        Animation <span></span
+                        ><i class="ri-gemini-fill"></i> Digital Solutions
+                        <span></span><i class="ri-gemini-fill"></i> Web
+                        Optimization</span
+                      >
+                    </div>
+                  </div>
+                  <div class="black-bg">
+                    <div class="marquee-content marquee-row-2">
+                      <span
+                        ><i class="ri-gemini-fill"></i> Web Design <span></span
+                        ><i class="ri-gemini-fill"></i> Responsive Design
+                        <span></span><i class="ri-gemini-fill"></i> UI
+                        Development <span></span
+                        ><i class="ri-gemini-fill"></i> Front-End Development
+                        <span></span><i class="ri-gemini-fill"></i> UI/UX
+                        Development <span></span
+                        ><i class="ri-gemini-fill"></i> Graphic Design
+                        <span></span><i class="ri-gemini-fill"></i> Web
+                        Animation <span></span
+                        ><i class="ri-gemini-fill"></i> Digital Solutions
+                        <span></span><i class="ri-gemini-fill"></i> Web
+                        Optimization</span
+                      >
+                      <span
+                        ><i class="ri-gemini-fill"></i> Web Design <span></span
+                        ><i class="ri-gemini-fill"></i> Responsive Design
+                        <span></span><i class="ri-gemini-fill"></i> UI
+                        Development <span></span
+                        ><i class="ri-gemini-fill"></i> Front-End Development
+                        <span></span><i class="ri-gemini-fill"></i> UI/UX
+                        Development <span></span
+                        ><i class="ri-gemini-fill"></i> Graphic Design
+                        <span></span><i class="ri-gemini-fill"></i> Web
+                        Animation <span></span
+                        ><i class="ri-gemini-fill"></i> Digital Solutions
+                        <span></span><i class="ri-gemini-fill"></i> Web
+                        Optimization</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
+        <!-- About Me  -->
+        <div class="container py-md-5">
+          <div class="row my-5">
+            <div class="col-md-4 pt-5" data-aos="fade-up">
+              <p class="fs-4 fw-medium">About Me</p>
+            </div>
+            <div class="col-md-8 pt-5">
+              <p class="fs-3 fw-normal" data-aos="fade-up">
+                I am Humam, a skilled Front-End Web Developer with over 2 years
+                of experience in building responsive and visually appealing
+                websites. My journey started with a strong foundation in HTML,
+                CSS, JavaScript, and Bootstrap, where I discovered my passion
+                for creating seamless and engaging user interfaces.
+              </p>
 
+              <div class="d-flex pt-5 gap-md-5" data-aos="fade-up">
+                <div class="text-center">
+                  <p><b class="fs-2">2</b></p>
+                  <p class="fs-5">Years Of Experience</p>
+                </div>
+                <div class="text-center">
+                  <p><b class="fs-2">10+</b></p>
+                  <p class="fs-5">Completed Projects</p>
+                </div>
+                <div class="text-center">
+                  <p><b class="fs-2">95% +</b></p>
+                  <p class="fs-5">Client Satisfactions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- recent Work  -->
+      <div class="container py-5">
+        <div class="col-md-5 my-5" data-aos="fade-up">
+          <h1>Services</h1>
+        </div>
 
-        <div class="container-fluid RecentWork">
+        <div class="row ServicesSec py-md-5">
+          <div class="col-md-8" id="service1" data-aos="fade-up">
+            <div class="servicesBox my-5">
+              <div class="d-flex align-items-center justify-content-between">
+                <small class="servicesCount">01</small>
+                <button class="border-0 bg-transparent toggler">
+                  <i class="ri-arrow-right-up-line"></i>
+                </button>
+              </div>
+              <div class="mt-5 pt-5">
+                <h3 class="text-uppercase">Responsive Web Design</h3>
+                <p class="fs-5 text-secondary">
+                  A fusion of strategic planning and creative coding to build
+                  websites that captivate and adapt seamlessly to any device.
+                  Tools and techniques to create stunning websites efficiently.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Second -->
+          <div class="col-md-4" id="service2" data-aos="fade-up">
+            <div class="servicesBox my-5">
+              <div class="d-flex align-items-center justify-content-between">
+                <small class="servicesCount">02</small>
+                <button class="border-0 bg-transparent toggler">
+                  <i class="ri-arrow-right-up-line"></i>
+                </button>
+              </div>
+              <div class="mt-5 pt-5">
+                <h3 class="text-uppercase">UI Development</h3>
+                <p class="fs-5 text-secondary">
+                  Merging creativity with strategy to design visually stunning,
+                  user-friendly interfaces.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- third -->
+          <div class="col-md-4" id="service3" data-aos="fade-up">
+            <div class="servicesBox my-5">
+              <div class="d-flex align-items-center justify-content-between">
+                <small class="servicesCount">03</small>
+                <button class="border-0 bg-transparent toggler">
+                  <i class="ri-arrow-right-up-line"></i>
+                </button>
+              </div>
+              <div class="mt-5 pt-5">
+                <h4 class="text-uppercase">Front-End Development</h4>
+                <p class="fs-5 text-secondary">
+                  A perfect balance of functionality and design for seamless,
+                  interactive user experiences.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- fourth -->
+          <div class="col-md-8" id="service4" data-aos="fade-up">
+            <div class="servicesBox my-5">
+              <div class="d-flex align-items-center justify-content-between">
+                <small class="servicesCount">04</small>
+                <button class="border-0 bg-transparent toggler">
+                  <i class="ri-arrow-right-up-line"></i>
+                </button>
+              </div>
+              <div class="mt-5 pt-5">
+                <h3 class="text-uppercase">Web Performance Optimization</h3>
+                <p class="fs-5 text-secondary">
+                  A combination of strategic thinking and technical expertise to
+                  enhance website performance, ensuring fast loading times and
+                  smooth user experiences beyond just aesthetics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- First  -->
+      </div>
+
+      <!-- recent Work  -->
+
+      <!-- <div class="container-fluid RecentWork">
             <div class="pt-5">
                 <img src="./images/Some recent Work.svg" alt="" width="250px">
             </div>
@@ -364,263 +436,337 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+
+    <div class="container-fluid RecentWork">
+        <div class="pt-5 text-center">
+            <img src="./images/Some recent Work.svg" alt="Recent Work" width="250px" class="title-img">
         </div>
-
-        <!-- Testinomials -->
-
-        <div class="container-fluid Testinomials_Section">
-            <div class="container">
-                <div class="col-md-5 my-5" data-aos="fade-up">
-                    <h1>Testinomials</h1>
+        <div class="row pb-5">
+            <!-- Project 1 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="my-3 Recent_HeroSec">
+                    <a href="https://mesis.pk" target="_blank" aria-label="Visit Mesis Project">
+                        <img src="https://lwt.mesis.pk/theme/assets/img/logo2.svg" alt="Mesis">
+                    </a>
+                    <p>School Management</p>
+                    <h3>Mesis</h3>
                 </div>
-                <div class="row py-5 g-4">
-
-                    <!-- Testinomial Card 1 -->
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="testimonial_card">
-                            <img src="https://nino-next-js.vercel.app/assets/images/testimonials/author1.jpg" alt="">
-                            <p class="text-secondary mt-5">
-                                Financial planners provide valuable knowledge on how to invest and save money in the
-                                most
-                                efficient way, helping individuals make informed financial decisions.
-                            </p>
-
-                            <h3>Zonathon Doe</h3>
-                            <p class="text-secondary">CEO & Founder X</p>
-                        </div>
-                    </div>
-
-                    <!-- Testinomial Card 2 -->
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="testimonial_card">
-                            <img src="https://nino-next-js.vercel.app/assets/images/testimonials/author2.jpg" alt="">
-                            <p class="text-secondary mt-5">
-                                Asian planners provide expert guidance on how to invest and save money efficiently,
-                                helping individuals make informed and strategic financial decisions.
-                            </p>
-
-                            <h3>Martin Smith</h3>
-                            <p class="text-secondary">CEO & Founder Google</p>
-                        </div>
-                    </div>
-
-                    <!-- Testinomial Card 3 -->
-                    <div class="col-md-4" data-aos="fade-up">
-                        <div class="testimonial_card">
-                            <img src="./images/ReviewClient_01.jpg" alt="">
-                            <p class="text-secondary mt-5">
-                                Hello planners assist people by providing valuable insights on how to invest and save
-                                money efficiently, ensuring informed and effective financial planning.
-                            </p>
-
-                            <h3>Methail Dev</h3>
-                            <p class="text-secondary">Managing Director - Paydesk</p>
-                        </div>
-                    </div>
-
-                    <!-- Testinomial Card 4 -->
-                    <div class="col-md-4" data-aos="fade-up">
-                        <div class="testimonial_card">
-                            <img src="./images/ReviewClient_02.jpg" alt="">
-                            <p class="text-secondary mt-5">
-                                Financial planners help individuals gain knowledge on how to invest and save money
-                                efficiently, providing guidance for effective financial management.
-                            </p>
-
-                            <h3>Eliana tweet</h3>
-                            <p class="text-secondary">CEO & Founder Tesla</p>
-                        </div>
-                    </div>
-
-                    <!-- Testinomial Card 5 -->
-                    <div class="col-md-4" data-aos="fade-up">
-                        <div class="testimonial_card">
-                            <img src="./images/ReviewClient_03.jpg" alt="">
-                            <p class="text-secondary mt-5">
-                                Yelp planners assist individuals in gaining valuable insights on how to invest and save
-                                money efficiently, ensuring smarter financial decisions.
-                            </p>
-
-                            <h3>Henry Clark</h3>
-                            <p class="text-secondary">Founder Oxyzen</p>
-                        </div>
-                    </div>
-
-                </div>
+                <a href="https://mesis.pk" target="_blank" class="project-link">Visit the Project</a>
             </div>
-        </div>
-
-
-
-        <!-- Stories  -->
-
-        <div class="container-fluid Stories_Section py-5">
-            <div class="container py-5">
-                <div class="col-md-5 my-5 py-5" data-aos="fade-up">
-                    <h1>Stories</h1>
+            <!-- Project 2 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="my-3 Recent_HeroSec">
+                    <a href="https://racelookup.com" target="_blank" aria-label="Visit Race LookUp Project">
+                        <img src="https://racelookup.com/images/Marathon-PNG-Photo.png" alt="Race LookUp">
+                    </a>
+                    <p>Running</p>
+                    <h3>Race LookUp</h3>
                 </div>
-                <div class="row ms-1 g-5" style="--bs-gutter-x: 1rem;">
-                    <div class="col-12">
-                        <div class="row StoriesCard">
-                            <div class="col-md-6" data-aos="fade-up">
-                                <div class="CardChild position-relative my-3">
-                                    <img src="https://nino-next-js.vercel.app/assets/images/blog/blog1.jpg" alt="">
-                                    <p>HELP</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 p-md-5 Cardtext" data-aos="fade-up">
-                                <p>Posted on Aug 28</p>
-                                <h2>Create a Landing Page That Performs Great</h2>
-                                <div class="btn btn-light">
-                                    Read more <i class="ri-arrow-right-line"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="row StoriesCard">
-                            <div class="col-md-6" data-aos="fade-up">
-                                <div class="CardChild position-relative my-3">
-                                    <img src="https://nino-next-js.vercel.app/assets/images/blog/blog2.jpg" alt="">
-                                    <p>BRANDING</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 p-md-5 Cardtext" data-aos="fade-up">
-                                <p>Posted on Aug 28</p>
-                                <h2>Create a Landing Page That Performs Great</h2>
-                                <div class="btn btn-light">
-                                    Read more <i class="ri-arrow-right-line"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="row StoriesCard">
-                            <div class="col-md-6" data-aos="fade-up">
-                                <div class="CardChild position-relative my-3">
-                                    <img src="https://nino-next-js.vercel.app/assets/images/blog/blog3.jpg" alt="">
-                                    <p>DESIGN</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 p-md-5 Cardtext" data-aos="fade-up">
-                                <p>Posted on Aug 28</p>
-                                <h2>Create a Landing Page That Performs Great</h2>
-                                <div class="btn btn-light">
-                                    Read more <i class="ri-arrow-right-line"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <a href="https://racelookup.com" target="_blank" class="project-link">Visit the Project</a>
             </div>
-        </div>
-
-
-        <!-- Contact Section  -->
-
-        <div class="container-fluid ContactContainer my-5">
-            <div class="container py-5">
-                <div class="col-md-5 my-5 py-5" data-aos="fade-up">
-                    <h1>Contact Me</h1>
+            <!-- Project 3 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="my-3 Recent_HeroSec">
+                    <a href="https://example.com/gems-harbor" target="_blank" aria-label="Visit Gem's Harbor Project">
+                        <img src="https://i.pinimg.com/280x280_RS/02/82/82/0282828011d2c356df59622d1f2ebf52.jpg" alt="Gem's Harbor">
+                    </a>
+                    <p>Jewelry</p>
+                    <h3>Gem's Harbor</h3>
                 </div>
-                <div class="row g-4">
-                    <div class="col-md-4" data-aos="fade-up">
-                        <div class="leftSide">
-                            <div class="text-body">
-                                <i class="ri-map-pin-line"></i>
-                                <h5>Our Office</h5>
-                                <p>Peshawer Pakistan</p>
-                            </div>
-
-                            <div class="text-body">
-                                <i class="ri-headphone-line"></i>
-                                <h5>Contact Number</h5>
-                                <p>+92 3420990948</p>
-                            </div>
-
-                            <div class="text-body">
-                                <i class="ri-mail-line"></i>
-                                <h5>Email</h5>
-                                <p>humamullahkhan001@gmail.com</p>
-                            </div>
-
-                            <div class="Socials-body">
-                                <h5>Socials</h5>
-                                <br>
-                                <i class="ri-facebook-circle-fill"></i>
-                                <i class="ri-twitter-x-line"></i>
-                                <i class="ri-linkedin-fill"></i>
-                                <i class="ri-github-line"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-8" data-aos="fade-up">
-                        <div class="rightSide">
-                            <div class="d-flex gap-1 flex-md-row flex-column">
-                                <div class="text-body my-2 position-relative d-flex flex-column">
-                                    <label for="name">Full Name</label>
-                                    <input type="text" id="name" placeholder="Steve Milnor">
-                                    <i class="ri-user-3-line"></i>
-                                </div>
-
-                                <div class="text-body my-2 position-relative d-flex flex-column">
-                                    <label for="name">Email Address</label>
-                                    <input type="text" id="name" placeholder="hello.example@gmail.com">
-                                    <i class="ri-mail-line"></i>
-                                </div>
-                            </div>
-                            <div class="text-body w-100 my-4 position-relative d-flex flex-column">
-                                <label for="name">Subject</label>
-                                <input type="text" id="name" placeholder="Your Subject">
-                                <i class="ri-user-3-line"></i>
-                            </div>
-                            <div class="text-body w-100 my-4 position-relative d-flex flex-column">
-                                <label for="name">Your Messege</label>
-                                <textarea rows="5" cols="50" form="usrform"
-                                    placeholder="Write Your Messege ..."></textarea>
-                            </div>
-                            <a href="mailto:humamullahkhan001@gmail.com" class="btn btn-dark">Send Me Messege <i class="ri-mail-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="container lastSection">
-            <div class="row pt-5">
-                <div class="col-12" data-aos="fade-up">
-                    <p>Have a project in mind?</p>
-                    <h2>lets work</h2>
-                </div>
-                <div class="col-12 d-flex pt-5 pb-2">
-                    <small>Created by HUMAM ULLAH🖤</small>
-                    <small class="ms-auto">©Copyright 2025</small>
-                </div>
+                <a href="https://example.com/gems-harbor" target="_blank" class="project-link">Visit the Project</a>
             </div>
         </div>
     </div>
 
+      <!-- Testinomials -->
+
+      <div class="container-fluid Testinomials_Section">
+        <div class="container">
+          <div class="col-md-5 my-5" data-aos="fade-up">
+            <h1>Testinomials</h1>
+          </div>
+          <div class="row py-5 g-4">
+            <!-- Testinomial Card 1 -->
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="testimonial_card">
+                <img
+                  src="https://nino-next-js.vercel.app/assets/images/testimonials/author1.jpg"
+                  alt=""
+                />
+                <p class="text-secondary mt-5">
+                  Financial planners provide valuable knowledge on how to invest
+                  and save money in the most efficient way, helping individuals
+                  make informed financial decisions.
+                </p>
+
+                <h3>Zonathon Doe</h3>
+                <p class="text-secondary">CEO & Founder X</p>
+              </div>
+            </div>
+
+            <!-- Testinomial Card 2 -->
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="testimonial_card">
+                <img
+                  src="https://nino-next-js.vercel.app/assets/images/testimonials/author2.jpg"
+                  alt=""
+                />
+                <p class="text-secondary mt-5">
+                  Asian planners provide expert guidance on how to invest and
+                  save money efficiently, helping individuals make informed and
+                  strategic financial decisions.
+                </p>
+
+                <h3>Martin Smith</h3>
+                <p class="text-secondary">CEO & Founder Google</p>
+              </div>
+            </div>
+
+            <!-- Testinomial Card 3 -->
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="testimonial_card">
+                <img src="./images/ReviewClient_01.jpg" alt="" />
+                <p class="text-secondary mt-5">
+                  Hello planners assist people by providing valuable insights on
+                  how to invest and save money efficiently, ensuring informed
+                  and effective financial planning.
+                </p>
+
+                <h3>Methail Dev</h3>
+                <p class="text-secondary">Managing Director - Paydesk</p>
+              </div>
+            </div>
+
+            <!-- Testinomial Card 4 -->
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="testimonial_card">
+                <img src="./images/ReviewClient_02.jpg" alt="" />
+                <p class="text-secondary mt-5">
+                  Financial planners help individuals gain knowledge on how to
+                  invest and save money efficiently, providing guidance for
+                  effective financial management.
+                </p>
+
+                <h3>Eliana tweet</h3>
+                <p class="text-secondary">CEO & Founder Tesla</p>
+              </div>
+            </div>
+
+            <!-- Testinomial Card 5 -->
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="testimonial_card">
+                <img src="./images/ReviewClient_03.jpg" alt="" />
+                <p class="text-secondary mt-5">
+                  Yelp planners assist individuals in gaining valuable insights
+                  on how to invest and save money efficiently, ensuring smarter
+                  financial decisions.
+                </p>
+
+                <h3>Henry Clark</h3>
+                <p class="text-secondary">Founder Oxyzen</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stories  -->
+
+      <div class="container-fluid Stories_Section py-5">
+        <div class="container py-5">
+          <div class="col-md-5 my-5 py-5" data-aos="fade-up">
+            <h1>Stories</h1>
+          </div>
+          <div class="row ms-1 g-5" style="--bs-gutter-x: 1rem">
+            <div class="col-12">
+              <div class="row StoriesCard">
+                <div class="col-md-6" data-aos="fade-up">
+                  <div class="CardChild position-relative my-3">
+                    <img
+                      src="https://nino-next-js.vercel.app/assets/images/blog/blog1.jpg"
+                      alt=""
+                    />
+                    <p>HELP</p>
+                  </div>
+                </div>
+                <div class="col-md-6 p-md-5 Cardtext" data-aos="fade-up">
+                  <p>Posted on Aug 28</p>
+                  <h2>Create a Landing Page That Performs Great</h2>
+                  <div class="btn btn-light">
+                    Read more <i class="ri-arrow-right-line"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="row StoriesCard">
+                <div class="col-md-6" data-aos="fade-up">
+                  <div class="CardChild position-relative my-3">
+                    <img
+                      src="https://nino-next-js.vercel.app/assets/images/blog/blog2.jpg"
+                      alt=""
+                    />
+                    <p>BRANDING</p>
+                  </div>
+                </div>
+                <div class="col-md-6 p-md-5 Cardtext" data-aos="fade-up">
+                  <p>Posted on Aug 28</p>
+                  <h2>Create a Landing Page That Performs Great</h2>
+                  <div class="btn btn-light">
+                    Read more <i class="ri-arrow-right-line"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="row StoriesCard">
+                <div class="col-md-6" data-aos="fade-up">
+                  <div class="CardChild position-relative my-3">
+                    <img
+                      src="https://nino-next-js.vercel.app/assets/images/blog/blog3.jpg"
+                      alt=""
+                    />
+                    <p>DESIGN</p>
+                  </div>
+                </div>
+                <div class="col-md-6 p-md-5 Cardtext" data-aos="fade-up">
+                  <p>Posted on Aug 28</p>
+                  <h2>Create a Landing Page That Performs Great</h2>
+                  <div class="btn btn-light">
+                    Read more <i class="ri-arrow-right-line"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section  -->
+
+      <div class="container-fluid ContactContainer my-5">
+        <div class="container py-5">
+          <div class="col-md-5 my-5 py-5" data-aos="fade-up">
+            <h1>Contact Me</h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="leftSide">
+                <div class="text-body">
+                  <i class="ri-map-pin-line"></i>
+                  <h5>Our Office</h5>
+                  <p>Peshawer Pakistan</p>
+                </div>
+
+                <div class="text-body">
+                  <i class="ri-headphone-line"></i>
+                  <h5>Contact Number</h5>
+                  <p>+92 3420990948</p>
+                </div>
+
+                <div class="text-body">
+                  <i class="ri-mail-line"></i>
+                  <h5>Email</h5>
+                  <p>humamullahkhan001@gmail.com</p>
+                </div>
+
+                <div class="Socials-body">
+                  <h5>Socials</h5>
+                  <br />
+                  <i class="ri-facebook-circle-fill"></i>
+                  <i class="ri-twitter-x-line"></i>
+                  <i class="ri-linkedin-fill"></i>
+                  <i class="ri-github-line"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8" data-aos="fade-up">
+              <div class="rightSide">
+                <div class="d-flex gap-1 flex-md-row flex-column">
+                  <div
+                    class="text-body my-2 position-relative d-flex flex-column"
+                  >
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Steve Milnor" />
+                    <i class="ri-user-3-line"></i>
+                  </div>
+
+                  <div
+                    class="text-body my-2 position-relative d-flex flex-column"
+                  >
+                    <label for="name">Email Address</label>
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="hello.example@gmail.com"
+                    />
+                    <i class="ri-mail-line"></i>
+                  </div>
+                </div>
+                <div
+                  class="text-body w-100 my-4 position-relative d-flex flex-column"
+                >
+                  <label for="name">Subject</label>
+                  <input type="text" id="name" placeholder="Your Subject" />
+                  <i class="ri-user-3-line"></i>
+                </div>
+                <div
+                  class="text-body w-100 my-4 position-relative d-flex flex-column"
+                >
+                  <label for="name">Your Messege</label>
+                  <textarea
+                    rows="5"
+                    cols="50"
+                    form="usrform"
+                    placeholder="Write Your Messege ..."
+                  ></textarea>
+                </div>
+                <a
+                  href="mailto:humamullahkhan001@gmail.com"
+                  class="btn btn-dark"
+                  >Send Me Messege <i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="container lastSection">
+        <div class="row pt-5">
+          <div class="col-12" data-aos="fade-up">
+            <p>Have a project in mind?</p>
+            <h2>lets work</h2>
+          </div>
+          <div class="col-12 d-flex pt-5 pb-2">
+            <small>Created by HUMAM ULLAH🖤</small>
+            <small class="ms-auto">©Copyright 2025</small>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <!-- AOS JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            AOS.init({
-                duration: 2500, // Animation duration in milliseconds
-                once: true, // Whether animation should happen only once
-            });
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          duration: 2500, // Animation duration in milliseconds
+          once: true, // Whether animation should happen only once
         });
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
